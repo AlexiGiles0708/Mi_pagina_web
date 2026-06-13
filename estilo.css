@@ -126,6 +126,65 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
     color: #ffffff;
 }
 
+
+/* Contenedor general de la galería */
+.container-fotos {
+    max-width: 1000px;
+    margin: 60px auto 20px auto;
+    padding: 0 20px;
+    clear: both; /* Evita interferencias con los floats de arriba */
+}
+
+/* Contenedor Flexbox para alinear las fotos de lado a lado */
+.galeria-flex {
+    display: flex;
+    justify-content: space-between; /* Distribuye espacio uniforme entre fotos */
+    gap: 20px; /* Separación entre las tarjetas */
+    flex-wrap: wrap; /* Si la pantalla es chica, las manda abajo ordenadamente */
+}
+
+/* Tarjeta individual para cada foto */
+.foto-card {
+    flex: 1;
+    min-width: 280px; /* Tamaño mínimo para que no se compriman feo */
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden; /* Esconde el desborde de la foto al hacer zoom */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para levantar la tarjeta completa */
+.foto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la imagen dentro de la tarjeta */
+.foto-card img {
+    width: 100%;
+    height: 220px; /* Altura fija para que todas las fotos se vean del mismo tamaño */
+    object-fit: cover; /* Recorta la imagen proporcionalmente para que no se estire feo */
+    transition: transform 0.4s ease;
+}
+
+/* Efecto hover para que la imagen haga un ligero "zoom in" interno */
+.foto-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Texto descriptivo abajo de cada foto */
+.foto-caption {
+    padding: 15px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111111;
+    border-top: 3px solid #2ecc71; /* Línea verde característica arriba del texto */
+}
+
+
 /* PIE DE PÁGINA */
 .footer {
     background-color: #111111;
