@@ -59,18 +59,30 @@ font-size: 1.8rem;
 margin-bottom: 15px;
 color: #111111; }
 
-.crypto-hash-box {
-background-color: #edf2f7;
-border-left: 4px solid #111111;
-padding: 15px;
-margin-top: 25px;
-border-radius: 4px; }
+.crypto-hash-box{
+    background-color: #edf2f7;
+    border-left: 4px solid #111111;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 4px;
+
+    transition: transform 0.3s ease, border-left-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.crypto-hash-box:hover {
+    transform: translateY(-5px); 
+    border-left-color: #2ecc71;  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); 
+}
 
 .crypto-hash-box code {
-font-family: monospace;
-font-size: 0.9rem;
-color: #2d3748;
-word-break: break-all; }
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #2d3748;
+    word-break: break-all; 
+    white-space: normal;
+}
 
 /* TARJETAS DE DESCARGA */
 .download-card {
