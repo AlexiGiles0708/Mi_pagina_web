@@ -127,6 +127,58 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
 }
 
 
+.formacion-card {
+    text-align: left;
+}
+
+.formacion-item {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-top: 1.2rem;
+    border-left: 2px solid #38bdf8; /* línea del timeline */
+}
+
+.formacion-item::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #2563eb;
+}
+
+.formacion-item h4 {
+    margin: 0 0 0.2rem 0;
+    font-size: 1rem;
+}
+
+.formacion-escuela {
+    display: block;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.formacion-escuela:hover {
+    text-decoration: underline;
+}
+
+.formacion-fecha {
+    display: block;
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin: 0.2rem 0 0.4rem 0;
+}
+
+.formacion-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+
 /* Contenedor general de la galería */
 .container-fotos {
     max-width: 1000px;
