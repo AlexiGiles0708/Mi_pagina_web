@@ -237,6 +237,25 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
 }
 
 
+/* Dato curioso de criptografía */
+.crypto-fact-box {
+    margin-top: 40px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    background-color: #f3f4f6;
+    border-left: 4px solid #2ecc71;
+}
+
+.crypto-fact-box h3 {
+    margin: 0 0 10px 0;
+}
+
+.crypto-fact-box p {
+    margin: 0;
+    color: #374151;
+    line-height: 1.5;
+}
+
 /* PIE DE PÁGINA */
 .footer {
     background-color: #111111;
