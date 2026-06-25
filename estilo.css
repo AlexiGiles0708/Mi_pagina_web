@@ -146,7 +146,7 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #2563eb;
+    background: #138342; /* círculo del timeline */
 }
 
 .formacion-item h4 {
